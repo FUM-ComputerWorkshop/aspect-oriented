@@ -9,7 +9,8 @@ public class Business1 {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public void calculateSomething(){
+    public void calculateSomething() throws InterruptedException {
+        Thread.sleep(500);
         logger.info(getClass().getName());
     }
 }

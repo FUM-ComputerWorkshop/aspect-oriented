@@ -16,7 +16,7 @@ class AspectApplicationTests {
 	private Business2 business2;
 
 	@Test
-	void contextLoads() {
+	void contextLoads() throws InterruptedException {
 		business1.calculateSomething();	//Joint point
 		business2.calculateSomething();	//Joint point
 	}
